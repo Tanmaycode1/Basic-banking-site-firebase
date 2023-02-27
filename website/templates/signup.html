@@ -1,0 +1,129 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+content %}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css/"/>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Sign Up</title>
+  </head>
+  <body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+    body{
+    overflow:hidden;
+    }
+    .ss{
+     height:500px,auto;
+     margin-top:-110px;
+     margin-bottom:30px;
+
+     }
+    .form-title{
+     font-size:3ev;
+    }
+    .signup{
+     height:25%;
+     padding-top:50px;
+     background-color:white;
+     }
+</style>
+<title>Sign Up Form by Colorlib</title>
+
+<link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="https://colorlib.com/etc/regform/colorlib-regform-7/css/style.css">
+<meta name="robots" content="noindex, follow">
+<script>(function(w,d){!function(e,t,r,a,s){e[r]=e[r]||{},e[r].executed=[],e.zaraz={deferred:[]};var n=t.getElementsByTagName("title")[0];e[r].c=t.cookie,n&&(e[r].t=t.getElementsByTagName("title")[0].text),e[r].w=e.screen.width,e[r].h=e.screen.height,e[r].j=e.innerHeight,e[r].e=e.innerWidth,e[r].l=e.location.href,e[r].r=t.referrer,e[r].k=e.screen.colorDepth,e[r].n=t.characterSet,e[r].o=(new Date).getTimezoneOffset(),//
+e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([t,r]),e[s].push({"zaraz.start":(new Date).getTime()});var i=t.getElementsByTagName(a)[0],o=t.createElement(a);o.defer=!0,o.src="/cdn-cgi/zaraz/s.js?"+new URLSearchParams(e[r]).toString(),i.parentNode.insertBefore(o,i)}(w,d,"zarazData","script","dataLayer");})(window,document);</script></head>
+<body>
+<section class="signup">
+<div class="ss">
+<div class="signup-content">
+<div class="signup-form">
+<h1 class="form-title">GRINGOTTS BANK <br> SIGN-UP</h1>
+<form method="POST" class="register-form" id="register-form">
+<div class="form-group">
+<label for="firstname"><i class="zmdi zmdi-account material-icons-name"></i></label>
+<input type="text" name="firstname" id="firstname" placeholder="UserName" />
+</div>
+<div class="form-group">
+<label for="email"><i class="zmdi zmdi-email"></i></label>
+<input type="email" name="email" id="email" placeholder="Your Email" />
+</div>
+<div class="form-group">
+<label for="password1"><i class="zmdi zmdi-lock"></i></label>
+<input type="password" name="password1" id="password1" placeholder="Password" />
+</div>
+<div class="form-group">
+<label for="pin"><i class="zmdi zmdi-lock-outline"></i></label>
+<input type="password" name="pin" id="pin" placeholder="Pin" />
+</div>
+<div class="form-group">
+<label for="balance"><i class="zmdi zmdi-lock-outline"></i></label>
+<input type="text" name="balance" id="balance" placeholder="Bank Balance" />
+</div>
+<div class="form-group">
+<input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+<label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in <a href="#" class="term-service">Terms of service</a></label>
+</div>
+<div class="form-group form-button">
+<input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
+</div>
+</form>
+</div>
+<div class="signup-image">
+<figure><img src="https://colorlib.com/etc/regform/colorlib-regform-7/images/signup-image.jpg" alt="sing up image"></figure>
+<a href="/" class="signup-image-link">I am already member</a>
+</div>
+</div>
+</div>
+</section>
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+</body>
+</html>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>
+{% endblock %}

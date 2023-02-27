@@ -1,0 +1,52 @@
+{% extends "base.html" %} {% block title %}Send{% endblock %} {% block content
+%}
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title> login page </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/sendmoney.css') }}">
+<div class="hm">
+  <div class="y"> Gringotts Bank</div>
+
+
+</div>
+<div class="mm">Send Money
+</div>
+<div class="center">
+    <h1>Send Money</h1>
+    <form method="POST">
+      <div class="form-group">
+          <div class="txt_field">
+              <input  class="form-control" id="amount" name="amount" required>
+              <span></span>
+              <label for="amount">Enter Amount To Send</label>
+          </div>
+      </div>
+      <div class="form-group">
+         <div class="txt_field">
+             <input class="form-control" id="pin" name="pin" required>
+             <span></span>
+             <label for="pin">Enter Your 4 digit pin</label>
+         </div>
+      </div>
+      <div class="form-group">
+         <div class="txt_field">
+             <input class="form-control" id="name" name="name" required>
+             <span></span>
+             <label for="name">Enter Reciever Username</label>
+         </div>
+      </div>
+      <div class="form-group">
+         <div class="txt_field">
+             <input class="form-control" id="email" name="email" required>
+             <span></span>
+             <label for="pin">Enter Reciever Email</label>
+         </div>
+      </div>
+
+  <br />
+  <input type="submit" value="Send" class="btn btn-primary">
+    </form>
+</div>
+
+{% endblock %}

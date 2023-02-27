@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block title %}Verify your email id {% endblock %} {% block content
+%}
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title> login page </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/otp.css') }}">
+<div class="hm">
+  <div class="y"> Gringotts Bank</div>
+
+
+</div>
+<div class="mm">Email Verification
+</div>
+<div class="center">
+    <h1>Verify your Email_Id</h1>
+    <form method="POST">
+      <div class="form-group">
+          <div class="txt_field">
+              <input  class="form-control" id="otp" name='otp' required>
+              <span></span>
+              <label for="otp">Enter Otp Send To Your Email id</label>
+          </div>
+      </div>
+
+  <br />
+  <input type="submit" value="Verify" class="btn btn-primary">
+  <div class="signup_link"> <input type="button" value="Wrong Email ?" onclick="history.back()">
+    </form>
+</div>
+
+{% endblock %}

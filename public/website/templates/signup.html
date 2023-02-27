@@ -1,0 +1,79 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+content %}
+<head xmlns="http://www.w3.org/1999/html">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup2.css') }}">
+<style>
+.mm{
+   position:relative;
+   top:-35px;
+   text-align:center;
+}
+.m{
+   position:relative;
+   top:-50px;
+   font-size:60px;
+   text-align:center;
+}
+</style>
+</head>
+<body>
+<form method="POST">
+
+
+      <div class="area">Gringotts Bank</div>
+      <div class="mm"><h3><font color="#E5E3E3">(Welcome to Gringotts safest place for your money)</font></h3></div>
+      <div class="m">SIGN-UP</div>
+    <div class="main-container">
+    <div class="main-container__content">
+      <div class="content__input--form">
+       <div class="form-group">
+
+       <label for="email">Email Address</label>
+       <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required/>
+    </div>
+  <div class="form-group">
+    <label for="firstName">Username</label>
+    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter Username" required/>
+  </div>
+  <div class="form-group">
+    <label for="pin">Set a Pin</label>
+    <input type="text" class="form-control" id="pin" name="pin" placeholder="Create a pin code" required/>
+  </div>
+  <div class="form-group">
+    <label for="balance">Bank Balance</label>
+    <input type="text" class="form-control" id="balance" name="balance" placeholder="Enter Amount" required/>
+  </div>
+  <div class="form-group">
+    <label for="password1">Password</label>
+    <input type="password" class="form-control" id="password1" name="password1" placeholder="Enter password" required/>
+  </div>
+
+  </div>
+  <br />
+     <div class="content__submit">
+
+       <button type ="submit" class="button"><center><font size="4" color="black">Sign Up</font> </center></button>
+        <div class="button google-button">
+        <div class="google-button__google-icon"></div>
+          <p class="no-select"><center><font size="3 ">Sign up with Google</font></center></p>
+      </div>
+      <div class="content__submit--line"></div>
+      <p>
+        Already have an account?
+        <a href="/">
+          <strong>Sign in</strong>
+        </a>
+      </p>
+      <div class="content__footer">
+        <p>
+          By clicking "Sign up" button above you agree to our
+             <strong>terms of use</strong>
+
+      </div>
+    </div>
+   </div>
+  </div>
+</form>
+<script src="{{ url_for('static', filename='javascript/signup.js') }}"></script>
+{% endblock %}

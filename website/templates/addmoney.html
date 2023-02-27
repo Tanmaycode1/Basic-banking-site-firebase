@@ -1,0 +1,40 @@
+{% extends "base.html" %} {% block title %}Deposit{% endblock %} {% block content
+%}
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title> Deposit </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/addmoney.css') }}">
+<div class="hm">
+  <div class="y"> Gringotts Bank</div>
+
+
+</div>
+<div class="mm">Deposit Your Money
+</div>
+<div class="center">
+    <h1>Deposit</h1>
+    <form method="POST">
+      <div class="form-group">
+          <div class="txt_field">
+              <input  class="form-control" id="amount" name="amount" required>
+              <span></span>
+              <label for="amount">Enter Amount To Deposit</label>
+          </div>
+      </div>
+      <div class="form-group">
+         <div class="txt_field">
+             <input class="form-control" id="pin" name="pin" required>
+             <span></span>
+             <label for="pin">Enter Your 4 digit pin</label>
+         </div>
+      </div>
+
+  <br />
+  <input type="submit" value="Deposit" class="btn btn-primary">
+  <div class="signup_link">
+      <a href="/withdraw">Withdraw Instead?</a>
+    </form>
+</div>
+
+{% endblock %}
