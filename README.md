@@ -77,4 +77,3 @@ If you have any questions, suggestions, or would like to contribute, feel free t
 - **LinkedIn:** https://www.linkedin.com/in/tanmaycode1
 
 Thank you for exploring my first web development project!
-```
