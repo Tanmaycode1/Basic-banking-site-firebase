@@ -1,6 +1,3 @@
-Certainly! Here's an updated README file that includes the mentioned files:
-
-```markdown
 # Basic Banking Site
 
 Welcome to the Basic Banking Site! This project represents my first venture into web development, utilizing Flask, SQL, HTML, CSS, and an attempt to integrate Firebase. The site provides basic banking functionalities, allowing users to add, withdraw, and send money.
